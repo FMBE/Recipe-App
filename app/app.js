@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+var app = angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
@@ -16,47 +16,28 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
 
-var recipes = [{
-      name: 'Spaghetti Bolognese',
-      description: "A sweet dish with little spices",
-      createdby: "Fausto Murillo",
-      ingredients: [
-        "spaghetti",
-        "garlic",
-        "meatballs",
-        "tomato",
-        "spices",
-        "salt"
-      ],
-      reviews: [{
-        stars: 5,
-        body: "I love this dish!",
-        author: "joe@example.org"
-      }, {
-        stars: 1,
-        body: "This dish sucks.",
-        author: "tim@example.org"
-      }]
-    }, {
-      name: 'Spaghetti Fetuccini',
-      description: "A sweet dish with creamy taste",
-      createdby: "Fausto Murillo",
-      ingredients: [
-        "spaghetti",
-        "ham",
-        "shrimp",
-        "fetuccini",
-        "spices",
-        "cream"
-      ],
-      reviews: [{
-        stars: 5,
-        body: "I love this dish!",
-        author: "joe@example.org"
-      }, {
-        stars: 1,
-        body: "This dish sucks.",
-        author: "tim@example.org"
-      }]
-    }
-    }];
+app.controller("GlobalController", function() {
+  this.products = recipes;
+  this.users = users;
+});
+
+app.controller("RegisterController", function(){
+
+  this.user = {};
+
+  this.addUser = function(product){
+    product.users.push(this.review);
+    this.review = {};
+  };
+});
+
+var users = [{
+    name: 'Fausto Murillo',
+    email: "fausto.murillo@hotmail.com",
+    password: 'abc123'
+  }, {
+    name: 'Leonardo Castillo',
+    email: "leonardo.castillo@hotmail.com",
+    password: '123abc'
+  }];
+();
