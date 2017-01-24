@@ -15,6 +15,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
+/*
 
 app.controller("GlobalController", function() {
   this.products = recipes;
@@ -26,8 +27,8 @@ app.controller("RegisterController", function(){
   this.user = {};
 
   this.addUser = function(product){
-    product.users.push(this.review);
-    this.review = {};
+    product.users.push(this.user);
+    this.user = {};
   };
 });
 
@@ -41,3 +42,5 @@ var users = [{
     password: '123abc'
   }];
 ();
+
+*/
