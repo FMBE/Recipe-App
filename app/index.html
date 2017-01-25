@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -38,7 +39,62 @@
   </nav>
 
   <div ng-view></div>
+  <footer>
+      <div class="footer" id="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                      <h3> Categories </h3>
+                      <ul>
+                        <li> <a href="#">Breakfast</a> </li>
+                        <li> <a href="#">Dessert</a> </li>
+                        <li> <a href="#">Drinks</a> </li>
+                        <li> <a href="#">Entrees</a> </li>
+                        <li> <a href="#">Healthy</a> </li>
+                        <li> <a href="#">Quick</a> </li>
+                        <li> <a href="#">Salads</a> </li>
+                        <li> <a href="#">Snacks</a> </li>
+                        <li> <a href="#">Soups</a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-offset-2 col-lg-2 col-md-2 col-sm-4 col-xs-6">
+                      <h3> Contact </h3>
+                      <ul>
+                          <li> <a href="#"> Lorem Ipsum </a> </li>
+                          <li> <a href="#"> Lorem Ipsum </a> </li>
+                          <li> <a href="#"> Lorem Ipsum </a> </li>
+                          <li> <a href="#"> Lorem Ipsum </a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-offset-2 col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+                      <h3> Social Media </h3>
+                      <ul class="social">
+                          <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                      </ul>
+                  </div>
+              </div>
+              <!--/.row-->
+          </div>
+          <div class="container">
+              <p class="pull-left"> Copyright © Footer 2014. All right reserved. </p>
+              <div class="pull-right">
+                  <ul class="nav nav-pills payments">
+                      <li><i class="fa fa-cc-visa"></i></li>
+                      <li><i class="fa fa-cc-mastercard"></i></li>
+                      <li><i class="fa fa-cc-amex"></i></li>
+                      <li><i class="fa fa-cc-paypal"></i></li>
+                  </ul>
+              </div>
+          </div>
+          <!--/.container-->
+      </div>
+      <!--/.footer-->
 
+  </footer>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -46,12 +102,15 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap.listgroup/1.1.2/listgroup.min.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="view3/view3.js"></script>
   <script src="view4/view4.js"></script>
   <script src="view5/view5.js"></script>
+  <script src="view6/view6.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
