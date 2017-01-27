@@ -11,11 +11,23 @@ body {
     position:relative;
     padding-bottom:[footer-height]
 }
+.navbar-brand{
+  font-size: 25px;
+}
 #myCarousel{
   margin-top: -20px;
 }
 th, td {
     padding: 15px;
+}
+.carousel-caption{
+  text-align: left;
+}
+.carousel-caption h3{
+  font-size: 70px;
+}
+.carousel-caption p{
+  font-size: 30px;
 }
 .menu {
   list-style: none;
